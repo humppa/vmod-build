@@ -1,0 +1,5 @@
+varnish-modules (0.15.0-1) unstable; urgency=low
+
+  * Initial packaged version
+
+ -- Tuomas Starck <dev@starck.fi>  Sun, 17 Jun 2018 20:46:00 +0000
