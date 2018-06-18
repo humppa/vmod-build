@@ -6,6 +6,7 @@ RUN set -x \
     debhelper \
     devscripts \
     build-essential \
+    fakeroot \
     pkg-config \
     python-docutils \
     varnish \
@@ -17,7 +18,6 @@ COPY . .
 
 RUN set -x \
   && debuild -b -uc -us \
-  && mkdir -v /pkg \
-  && cp -vx ../varnish-modules_* /pkg
+  && ls -la /usr/src
 
 ENTRYPOINT ["/bin/bash"]
